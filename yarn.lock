@@ -850,6 +850,10 @@ component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
 
+concat-loader@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/concat-loader/-/concat-loader-0.1.0.tgz#3c5c13f9ca07dbcf6d19b2ffe1788ff7273dcdd2"
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"

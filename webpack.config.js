@@ -1,6 +1,3 @@
-//
-// Read the .yaml config file.
-//
 const path = require('path')
 
 module.exports = {
@@ -12,6 +9,7 @@ module.exports = {
         test: /\.pug$/,
         use: [
           { loader: 'file-loader', options: { name: 'index.html' } },
+          'concat-loader',
           'extract-loader',
           'html-loader',
           'pug-html-loader'
@@ -20,6 +18,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           { loader: 'file-loader', options: { name: 'main.css' } },
+          'concat-loader',
           'extract-loader',
           'css-loader',
           // { loader: 'postcss-loader', options: { plugins: () => [autoprefixer({ grid: false })] } },
