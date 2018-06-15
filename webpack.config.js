@@ -6,23 +6,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /one\.pug$/,
+        test: /\.pug$/,
         use: [
-          { loader: 'file-loader', options: { name: 'index2.html' } },
-          'concat-loader',
+          { loader: 'file-loader', options: { name: '[name].html' } },
           'extract-loader',
           'html-loader',
           'pug-html-loader'
         ] },
-      {
-        test: /two\.pug$/,
-          use: [
-            { loader: 'file-loader', options: { name: 'index2.html' } },
-            'concat-loader',
-            'extract-loader',
-            'html-loader',
-            'pug-html-loader'
-          ] },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
