@@ -6,14 +6,32 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.pug$/,
+        test: /one\.pug$/,
         use: [
-          { loader: 'file-loader', options: { name: 'index.html' } },
+          { loader: 'file-loader', options: { name: 'index2.html' } },
           'concat-loader',
           'extract-loader',
           'html-loader',
           'pug-html-loader'
         ] },
+      {
+        test: /two\.pug$/,
+          use: [
+            { loader: 'file-loader', options: { name: 'index2.html' } },
+            'concat-loader',
+            'extract-loader',
+            'html-loader',
+            'pug-html-loader'
+          ] },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      },
       {
         test: /\.scss$/,
         use: [
